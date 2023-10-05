@@ -1,0 +1,16 @@
+<%- include('partials/header') %>
+
+
+<section class="listePokemon">
+
+    <% for( let index = 0; index < list.length; index++ ) { %>
+    <%- include('partials/pokemon', {
+                numero: list[index].numero,
+                nom: list[index].nom
+            }) %>
+
+    <% } %>
+</section>
+
+
+<%- include('partials/footer') %>
